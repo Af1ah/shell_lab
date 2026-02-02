@@ -1,5 +1,6 @@
 echo "enter limit"
 read limit
+echo "prime numbers are:"
 for ((num=2; num<=$limit; num++))
 do 
 is_prime=1
@@ -11,6 +12,5 @@ do
    break
 fi
 done
-((is_prime)) && echo $num
+((is_prime)) && echo "$num"
 done
-echo
