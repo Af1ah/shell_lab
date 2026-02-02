@@ -11,5 +11,5 @@ elif test $num2 -gt $num3
 then 
    echo "$num2 is greater"
 else 
-  echo "$num3 is greater"\
+  echo "$num3 is greater"
 fi
