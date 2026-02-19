@@ -1,5 +1,6 @@
-echo "enter radius of circle"
-read r
+
+read -p "enter radius of circle  " r
+
 
 area=$(echo 3.14*$r*$r |bc)
 
