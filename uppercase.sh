@@ -1,12 +1,11 @@
-echo "enter the file name"
+echo "Enter file name:"
 read fname
 
-if test -f "$fname"
-then 
-    tr '[:lower:]' '[:upper:]' < "$fname" > temp.txt
-    mv temp.txt "$fname"
-    echo "file transfered to upper case"
-
+if [ -f "$fname" ]
+then
+    tr 'a-z' 'A-Z' < "$fname" > temp
+    mv temp "$fname"
+    echo "Converted to uppercase"
 else
-    echo "file not found"
+    echo "File not found"
 fi
