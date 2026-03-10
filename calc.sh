@@ -21,8 +21,12 @@ echo "4.division"
  3) res=$((n1*n2))
  operator="mul"
  ;;
- 4)if $n2 -eq 
-  res=$((n1/n2))
+ 4) if test $n2 -ne 0
+ then
+  res=$(echo "scale=2; $n1/$n2" |bc)
+  else
+  echo "cannot devided by zero"
+  fi
  operator="div"
  ;;
  *) echo "enter valid number"

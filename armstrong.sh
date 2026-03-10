@@ -8,6 +8,7 @@ do
   sum=$((sum+rem**digits))
   temp=$((temp/10))
 done
+
 if test $sum -eq $num
 then
   echo "$num is an Armstrong number"

@@ -5,7 +5,8 @@ sum=0
     sum=$((sum+num))
 done
 
-if [ $# -eq 0 ]; then
+if [ $# -eq 0 ]; 
+then
   avg=0
 else
   avg=$((sum/$#))
